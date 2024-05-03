@@ -14,6 +14,8 @@ for **e** (that must be less than all third letters in words that start with **a
 
 Now that the graph containing all the necessary conditions for the dictionary is ready, we can compose the dictionary itself, provided that the graph is acyclic (otherwise a cycle would mean that each letter in it must be smaller than the others in this cycle, which is impossible). If there are no cycles in the graph, we can derive the correct order of letters of the alphabet by topological sorting.
 
+This solution works not only for the name Alex, but also for any name we want to place at the top of the list.
+
 ## Task 2
 
 Here we accept two .json files and deserializes the JSON data into instances of the 
